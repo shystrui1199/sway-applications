@@ -16,7 +16,7 @@ Description of the upcoming release here.
 
 ### Changed
 
-- Something changed here 1
+- [#809](https://github.com/FuelLabs/sway-applications/issues/809) Set Devrel team as codeowners
 - Something changed here 2
 
 ### Fixed
