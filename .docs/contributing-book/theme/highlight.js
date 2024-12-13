@@ -34,7 +34,7 @@ walk(e){return this.constructor._walk(e,this.rootNode)}static _walk(e,t){
 return"string"==typeof t?e.addText(t):t.children&&(e.openNode(t),
 t.children.forEach((t=>this._walk(e,t))),e.closeNode(t)),e}static _collapse(e){
 "string"!=typeof e&&e.children&&(e.children.every((e=>"string"==typeof e))?e.children=[e.children.join("")]:e.children.forEach((e=>{
-l._collapse(e)})))}}class c extends l{constructor(e){super(),this.options=e}
+l._collapse(e)})))}}class CodeHighlighter extends l{constructor(e){super(),this.options=e}
 addKeyword(e,t){""!==e&&(this.openNode(t),this.addText(e),this.closeNode())}
 addText(e){""!==e&&this.add(e)}addSublanguage(e,t){const n=e.root
 ;n.kind=t,n.sublanguage=!0,this.add(n)}toHTML(){
