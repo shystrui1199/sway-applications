@@ -193,7 +193,10 @@ const n=y.classNameAliases[e]||e;S.addKeyword(t[0],n)}}else n+=t[0]
 ;e=v.keywordPatternRe.lastIndex,t=v.keywordPatternRe.exec(R)}var s
 ;n+=R.substr(e),S.addText(n)}function u(){null!=v.subLanguage?(()=>{
 if(""===R)return;let e=null;if("string"==typeof v.subLanguage){
-if(!t[v.subLanguage])return void S.addText(R)
+if (!t[v.subLanguage]) {
+  S.addText(R);
+  return;
+}
 ;e=E(v.subLanguage,R,!0,O[v.subLanguage]),O[v.subLanguage]=e._top
 }else e=_(R,v.subLanguage.length?v.subLanguage:null)
 ;v.relevance>0&&(M+=e.relevance),S.addSublanguage(e._emitter,e.language)
